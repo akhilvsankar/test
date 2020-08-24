@@ -12,6 +12,8 @@ public class ExampleService {
 	public Message<String> transform(Message<String>message)
 	{
 		System.out.println("In transformer........................"+message.getPayload());
+			File file = new File("file.txt");
+        file.deleteOnExit(); 
 		return message;
 		
 	}
