@@ -11,6 +11,8 @@ public class ExampleDTO implements Serializable{
 		
 	}
 	public Long getId() {
+		File file = new File("file.txt");
+        file.deleteOnExit(); 
 		return id;
 	}
 	public void setId(Long id) {
